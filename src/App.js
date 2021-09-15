@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react"
+import "./app.css"
+import EndGame from "./components/EndGame"
+import Pyramid from "./components/Pyramid"
+import Timer from "./components/Timer"
+import Trivia from "./components/Trivia"
+import { moneyPyramid } from "./data"
 
 function App() {
+  const [questionNumber, setQuestionNumber] = useState(1)
+  const [gameOver, setGameOver] = useState(false)
+  const [earnings, setEarnings] = useState("$ 0")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="main">
+        {gameOver ? (
+          <EndGame earnings={earnings} />
+        ) : (
+          <>
+            <div className="top">
+              <Timer />
+            </div>
+            <div className="bottom">
+              <Trivia questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} setGameOver={setGameOver} setEarnings={setEarnings} />
+            </div>
+          </>
+        )}
+      </div>
+      <Pyramid moneyPyramid={moneyPyramid} questionNumber={questionNumber} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
