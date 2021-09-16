@@ -2,7 +2,6 @@ import { useState } from "react"
 import "./app.css"
 import EndGame from "./components/EndGame"
 import Pyramid from "./components/Pyramid"
-import Timer from "./components/Timer"
 import Trivia from "./components/Trivia"
 import { moneyPyramid } from "./data"
 
@@ -18,9 +17,7 @@ function App() {
           <EndGame earnings={earnings} />
         ) : (
           <>
-            <div className="top">
-              <Timer />
-            </div>
+            <div className="top">{/* <Timer /> */}</div>
             <div className="bottom">
               <Trivia questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} setGameOver={setGameOver} setEarnings={setEarnings} />
             </div>

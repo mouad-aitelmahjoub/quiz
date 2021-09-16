@@ -1,10 +1,15 @@
 import { useState, useEffect } from "react"
 import { questions, moneyPyramid } from "../data"
+import useSound from "use-sound"
+import correct from "../assets/correct 1.mp3"
+import wrong from "../assets/wrong 1.mp3"
 
 export default function Trivia({ questionNumber, setQuestionNumber, setGameOver, setEarnings }) {
   const [currentQuestion, setCurrentQuestion] = useState(null)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
   const [answerClassname, setAnswerClassname] = useState("answer")
+  const [correctAnswer] = useSound(correct)
+  const [wrongAnswer] = useSound(wrong)
 
   useEffect(() => {
     setCurrentQuestion(questions[questionNumber - 1])
@@ -16,12 +21,18 @@ export default function Trivia({ questionNumber, setQuestionNumber, setGameOver,
     setAnswerClassname(a.correct ? "answer correct" : "answer wrong")
     setTimeout(() => {
       if (a.correct) {
-        setQuestionNumber((prev) => prev + 1)
-        setSelectedAnswer(null)
+        correctAnswer()
+        setTimeout(() => {
+          setQuestionNumber((prev) => prev + 1)
+          setSelectedAnswer(null)
+        }, 800)
       } else {
-        setGameOver(true)
+        wrongAnswer()
+        setTimeout(() => {
+          setGameOver(true)
+        }, 800)
       }
-    }, 3000)
+    }, 2000)
   }
   return (
     <div className="trivia">

@@ -140,7 +140,10 @@
   width: 100%;
   padding: 20px;
 }
-
+.pyramidTitle {
+  text-align: center;
+  margin-bottom: 25px;
+}
 .moneyListItem {
   display: flex;
   align-items: center;

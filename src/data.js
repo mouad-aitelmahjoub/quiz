@@ -1,7 +1,7 @@
 export const questions = [
   {
     id: 1,
-    question: "Who won the UCL last season (2020/2021) ?",
+    question: "Who won the UEFA Champions League last season (2020/2021) ?",
     answers: [
       {
         text: "Bayern Munich",
@@ -23,22 +23,22 @@ export const questions = [
   },
   {
     id: 2,
-    question: "What does “www” stand for in a website browser?",
+    question: "Galileo was the citizen of which country?",
     answers: [
       {
-        text: "What was working",
+        text: "Greece",
         correct: false,
       },
       {
-        text: "Wow Wow Wow",
+        text: "Denmark",
         correct: false,
       },
       {
-        text: "Woop Woop Woop",
+        text: "Spain",
         correct: false,
       },
       {
-        text: "World Wide Web",
+        text: "Italy",
         correct: true,
       },
     ],
@@ -70,7 +70,7 @@ export const questions = [
     question: "What is the name of the biggest technology company in South Korea?",
     answers: [
       {
-        text: "Huwai",
+        text: "Huawei",
         correct: false,
       },
       {
@@ -89,243 +89,243 @@ export const questions = [
   },
   {
     id: 5,
-    question: "What is the name of the biggest technology company in South Korea?",
+    question: "How many ribs are in a human body?",
     answers: [
       {
-        text: "Huwai",
+        text: "12",
         correct: false,
       },
       {
-        text: "Xiaomi",
-        correct: false,
-      },
-      {
-        text: "Hyundai",
-        correct: false,
-      },
-      {
-        text: "Samsung",
+        text: "24",
         correct: true,
+      },
+      {
+        text: "16",
+        correct: false,
+      },
+      {
+        text: "32",
+        correct: false,
       },
     ],
   },
   {
     id: 6,
-    question: "What is the name of the biggest technology company in South Korea?",
+    question: "What color eyes do most humans have?",
     answers: [
       {
-        text: "Huwai",
-        correct: false,
-      },
-      {
-        text: "Xiaomi",
-        correct: false,
-      },
-      {
-        text: "Hyundai",
-        correct: false,
-      },
-      {
-        text: "Samsung",
+        text: "Brown",
         correct: true,
+      },
+      {
+        text: "Blue",
+        correct: false,
+      },
+      {
+        text: "Green",
+        correct: false,
+      },
+      {
+        text: "Hazel",
+        correct: false,
       },
     ],
   },
   {
     id: 7,
-    question: "What is the name of the biggest technology company in South Korea?",
+    question: "What is the loudest animal on Earth?",
     answers: [
       {
-        text: "Huwai",
+        text: "Elephant",
         correct: false,
       },
       {
-        text: "Xiaomi",
+        text: "Eagle",
         correct: false,
       },
       {
-        text: "Hyundai",
-        correct: false,
-      },
-      {
-        text: "Samsung",
+        text: "Whale",
         correct: true,
+      },
+      {
+        text: "baboon",
+        correct: false,
       },
     ],
   },
   {
     id: 8,
-    question: "What is the name of the biggest technology company in South Korea?",
+    question: "Which country consumes the most chocolate per capita?",
     answers: [
       {
-        text: "Huwai",
+        text: "USA",
         correct: false,
       },
       {
-        text: "Xiaomi",
+        text: "China",
         correct: false,
       },
       {
-        text: "Hyundai",
+        text: "France",
         correct: false,
       },
       {
-        text: "Samsung",
+        text: "Switzerland",
         correct: true,
       },
     ],
   },
   {
     id: 9,
-    question: "What is the name of the biggest technology company in South Korea?",
+    question: "In which city was Anne Frank’s hiding place?",
     answers: [
       {
-        text: "Huwai",
+        text: "Berlin",
         correct: false,
       },
       {
-        text: "Xiaomi",
+        text: "Bruges",
         correct: false,
       },
       {
-        text: "Hyundai",
+        text: "Paris",
         correct: false,
       },
       {
-        text: "Samsung",
+        text: "Amsterdam",
         correct: true,
       },
     ],
   },
   {
     id: 10,
-    question: "What is the name of the biggest technology company in South Korea?",
+    question: "Which Dutch artist painted “Girl with a Pearl Earring”?",
     answers: [
       {
-        text: "Huwai",
-        correct: false,
-      },
-      {
-        text: "Xiaomi",
-        correct: false,
-      },
-      {
-        text: "Hyundai",
-        correct: false,
-      },
-      {
-        text: "Samsung",
+        text: "Vermeer",
         correct: true,
+      },
+      {
+        text: "Vincent van Gogh",
+        correct: false,
+      },
+      {
+        text: "Pablo Picasso",
+        correct: false,
+      },
+      {
+        text: "Salvador Dalí",
+        correct: false,
       },
     ],
   },
   {
     id: 11,
-    question: "What is the name of the biggest technology company in South Korea?",
+    question: "What country won the very first FIFA World Cup in 1930?",
     answers: [
       {
-        text: "Huwai",
+        text: "Argentina",
         correct: false,
       },
       {
-        text: "Xiaomi",
-        correct: false,
-      },
-      {
-        text: "Hyundai",
-        correct: false,
-      },
-      {
-        text: "Samsung",
+        text: "Uruguay",
         correct: true,
+      },
+      {
+        text: "Brazil",
+        correct: false,
+      },
+      {
+        text: "Paraguay",
+        correct: false,
       },
     ],
   },
   {
     id: 12,
-    question: "What is the name of the biggest technology company in South Korea?",
+    question: "Which planet is the hottest in the solar system",
     answers: [
       {
-        text: "Huwai",
+        text: "Mercury",
         correct: false,
       },
       {
-        text: "Xiaomi",
+        text: "Mars",
         correct: false,
       },
       {
-        text: "Hyundai",
-        correct: false,
-      },
-      {
-        text: "Samsung",
+        text: "Venus",
         correct: true,
+      },
+      {
+        text: "Saturn",
+        correct: false,
       },
     ],
   },
   {
     id: 13,
-    question: "What is the name of the biggest technology company in South Korea?",
+    question: "Which country produces the most coffee in the world?",
     answers: [
       {
-        text: "Huwai",
+        text: "USA",
         correct: false,
       },
       {
-        text: "Xiaomi",
-        correct: false,
-      },
-      {
-        text: "Hyundai",
-        correct: false,
-      },
-      {
-        text: "Samsung",
+        text: "Brazil",
         correct: true,
+      },
+      {
+        text: "Andorra",
+        correct: false,
+      },
+      {
+        text: "Chile",
+        correct: false,
       },
     ],
   },
   {
     id: 14,
-    question: "What is the name of the biggest technology company in South Korea?",
+    question: "The Statue of Liberty was given to the US by which country?",
     answers: [
       {
-        text: "Huwai",
+        text: "England",
         correct: false,
       },
       {
-        text: "Xiaomi",
+        text: "Japan",
         correct: false,
       },
       {
-        text: "Hyundai",
+        text: "Germany",
         correct: false,
       },
       {
-        text: "Samsung",
+        text: "France",
         correct: true,
       },
     ],
   },
   {
     id: 15,
-    question: "What is the name of the biggest technology company in South Korea?",
+    question: "What is the most common letter in the English alphabet?",
     answers: [
       {
-        text: "Huwai",
-        correct: false,
-      },
-      {
-        text: "Xiaomi",
-        correct: false,
-      },
-      {
-        text: "Hyundai",
-        correct: false,
-      },
-      {
-        text: "Samsung",
+        text: "E",
         correct: true,
+      },
+      {
+        text: "A",
+        correct: false,
+      },
+      {
+        text: "O",
+        correct: false,
+      },
+      {
+        text: "U",
+        correct: false,
       },
     ],
   },
